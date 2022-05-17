@@ -1,0 +1,21 @@
+{
+  "license": "MIT",
+  "private" : true,
+  "workspaces" : [
+    "backend",
+    "frontend"
+  ],
+
+  "scripts": {
+    "co" : "sui-mono commit"
+  },
+
+  "devDependencies": {
+    "@s-ui/mono": "2.27.0",
+    "standard": "17.0.0"
+  },
+
+  "eslintConfig": {
+    "extends" : [ "./.eslintrc.json" ]
+  }
+}

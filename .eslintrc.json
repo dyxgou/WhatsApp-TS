@@ -1,0 +1,9 @@
+{
+  "extends" : [ "./node_modules/standard/eslintrc.json" ],
+  "rules": {
+    "quotes" : "off",
+    "brace-style" : "off",
+    "jsx-quotes" : "off",
+    "comma-spacing" : "off"
+  } 
+}
