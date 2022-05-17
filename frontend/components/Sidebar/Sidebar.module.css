@@ -1,0 +1,6 @@
+.sidebar
+{
+  background-color: var(--blackBackground);
+  flex: .2;
+  overflow-y: scroll;
+}

@@ -1,0 +1,20 @@
+.header
+{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  background-color: var(--blackTwo);
+  max-height: 90px;
+  top: 0;
+  z-index: 999;
+  position: sticky;
+}
+
+.header__icons
+{
+  display: flex;
+  justify-content: space-around;
+  flex: .8;
+  align-items: center;
+}
