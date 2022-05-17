@@ -1,0 +1,23 @@
+.user
+{
+  color: white;
+  display: flex;
+  padding: 15px;
+  font-family: var(--fontOne);
+  font-weight: 700;
+  align-items: center;
+  cursor: pointer;
+  transition: .5s;
+  margin: 15px;
+}
+
+.user > span
+{
+  margin: 15px;
+}
+
+.user:hover
+{
+  background-color: var(--blackOne);
+  border-radius: 30px;
+}
