@@ -1,7 +1,7 @@
 .icon__container
 {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   padding: 5px;
   border-radius: 100%;
   cursor: pointer;
@@ -10,7 +10,7 @@
 
 .icon
 {
-  font-size: 30px;
+  font-size: 20px;
   color: var(--gray);
 }
 
