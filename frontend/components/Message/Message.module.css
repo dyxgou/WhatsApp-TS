@@ -1,0 +1,54 @@
+.message
+{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 70px 15px 20px;
+  width: max-content;
+  border-radius: 30px;
+  font-family: var(--fontOne);
+  transition: .5s;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.message__content
+{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.message__username
+{
+  display: none;
+  font-weight: 600;
+  opacity: 0;
+  color: var(--authorColor);
+  font-size: 14px;
+  transition: .6s;
+  position: absolute;
+  top: 7px;
+}
+
+.message:hover
+{
+  padding-top: 30px; 
+  padding-right: 80px;
+}
+
+.message:hover > .message__username
+{
+  display: block;
+  opacity: 1;
+}
+
+.message__author 
+{
+  background-color: var(--greenOne);
+  margin-left: auto;
+}
+
+.message__friend
+{
+  background-color: var(--blackOne);
+}
