@@ -1,3 +1,4 @@
+import fastifyJwt from "@fastify/jwt";
 import fp from "fastify-plugin";
 
 const registerJWT = fp((fastify) => 
@@ -10,7 +11,9 @@ const registerJWT = fp((fastify) =>
     process.exit(1)
   }
 
-  
+  fastify.register(fastifyJwt , {
+    secret: JWT_SECRET
+  }) 
 })
 
 export default registerJWT
