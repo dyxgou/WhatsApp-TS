@@ -4,6 +4,7 @@
     "quotes" : "off",
     "brace-style" : "off",
     "jsx-quotes" : "off",
-    "comma-spacing" : "off"
+    "comma-spacing" : "off",
+    "curly" : "off"
   } 
 }
