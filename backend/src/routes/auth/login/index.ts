@@ -22,7 +22,7 @@ const login : FastifyPluginAsync = async(fastify , options) =>
     if(!isCorrectPassword || !user)
       throw fastify.httpErrors.unauthorized("The email or password is wrong")
 
-    
+     
   })
 }
 
