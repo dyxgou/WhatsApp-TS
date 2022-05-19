@@ -22,7 +22,13 @@ const login : FastifyPluginAsync = async(fastify , options) =>
     if(!isCorrectPassword || !user)
       throw fastify.httpErrors.unauthorized("The email or password is wrong")
 
-     
+    const SEVEN_DAYS = 60 * 60 * 24 * 7
+
+    const token = fastify.jwt.sign({ userId : user?.id } , {
+      expiresIn : SEVEN_DAYS
+    })
+
+    return reply.status(200).send({ token })
   })
 }
 

@@ -20,13 +20,16 @@ const connectDB = fp(async (fastify) =>
       User : connection.model("users" , UserSchema),
       connection
     })
+
+    fastify.log.info("Mongoose connected")
   }).catch(err => {
     fastify.log.error(err)
     process.exit(1)
   })
 
-  process.on("uncaughtException" , err  => 
+  process.on("uncaughtException" , (err)  => 
   {
+    fastify.log.error({ err })
     mongoose.disconnect()
   })
 }) 
